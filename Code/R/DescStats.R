@@ -1,3 +1,8 @@
+install.packages("readxl")
+install.packages("skedastic")
+install.packages("moments")
+
+
 
 # Regression
 
@@ -5,8 +10,8 @@ library(readxl)
 library(skedastic)
 library(moments)
 
-setwd("C:/Users/Leandro/Desktop/Livre-Docente/Codigos/sp500analysis")
-sp_tech <- read_excel("sp_tech.xlsx")
+# setwd("C:/Users/Leandro/Desktop/Livre-Docente/Codigos/sp500analysis")
+sp_tech <- read_excel("C:/Users/limam/Documents/GitHub/Datathon_2023/Dados/sp.xlsx")
 
 # --------------------
 
