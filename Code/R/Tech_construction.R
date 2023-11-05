@@ -1,3 +1,7 @@
+install.packages("writexl")
+library(writexl)
+
+
 
 # ------------------------------------------------------------------------------
 
@@ -9,8 +13,9 @@
 
 setwd("C:/Users/Leandro/Desktop/Livre-Docente/Codigos/sp500analysis")
 
+
 library(readxl)
-dados <- read_excel("sp.xlsx")
+dados <- read_excel("C:/Users/limam/Documents/GitHub/Datathon_2023/Dados/sp.xlsx")
 precos <- as.matrix(dados$price)
 vol <- as.matrix(dados$volume)
 N <- nrow(precos)
