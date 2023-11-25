@@ -30,11 +30,12 @@ rquadrados = matrix(0,nrow = 14,ncol = 4)
 for(i in 1:14){
   
   rquadrados[i,1]= 1-(sum((((resultados[,1]-resultados[,i+1])^2)))/sum(((resultados[,1]-resultados[,16])^2)))
-  rquadrados[i,2]= 1-(sum((((resultados[,1]-resultados[,i+1])^2)*data$Fear[(insample+1):276]))/sum(((resultados[,1]-resultados[,16])^2)*data$Fear[(insample+1):276]))
-  rquadrados[i,3]= 1-(sum((((resultados[,1]-resultados[,i+1])^2)*data$Greed[(insample+1):276]))/sum(((resultados[,1]-resultados[,16])^2)*data$Greed[(insample+1):276]))
-  rquadrados[i,4]= 1-(sum((((resultados[,1]-resultados[,i+1])^2)*data$Neutral[(insample+1):276]))/sum(((resultados[,1]-resultados[,16])^2)*data$Neutral[(insample+1):276]))
+  rquadrados[i,2]= 1-(sum((((resultados[,1]-resultados[,i+1])^2)*data$Fear[(insample+1):278]))/sum(((resultados[,1]-resultados[,16])^2)*data$Fear[(insample+1):278]))
+  rquadrados[i,3]= 1-(sum((((resultados[,1]-resultados[,i+1])^2)*data$Greed[(insample+1):278]))/sum(((resultados[,1]-resultados[,16])^2)*data$Greed[(insample+1):278]))
+  rquadrados[i,4]= 1-(sum((((resultados[,1]-resultados[,i+1])^2)*data$Neutral[(insample+1):278]))/sum(((resultados[,1]-resultados[,16])^2)*data$Neutral[(insample+1):278]))
   
 }
 rquadrados = rquadrados*100
 
 write.csv(rquadrados, 'r2_OS_normal.csv')
+
